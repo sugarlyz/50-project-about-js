@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.container {
+  max-width: 600px;
+  margin: 0  auto;
+}
+.container h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+.content {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s ease;
+}
+.content .question {
+  font-size: 1.17em;
+}
+.content .answer {
+  display: none;
+  margin: 30px 0 0;
+}
+.content button {
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+.content button .fa {
+  font-weight: 900;
+}
+.fa.fa-times {
+  display: none;
+}
+.content.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.active button {
+  background-color: #9fa4a8;
+}
+.active .fa.fa-times {
+  color: #fff;
+  display: block;
+}
+.active .fa-chevron-down {
+  display: none;
+}
+.active .answer {
+  display: block;
+}
+/*# sourceMappingURL=./index.css.map */

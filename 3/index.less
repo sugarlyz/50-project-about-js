@@ -1,0 +1,96 @@
+html, head,body{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#333;
+    overflow-x:hidden;//对x轴隐藏
+}
+.container{
+    width:100vw;
+    padding:50px;
+    align-items:center;
+    justify-content: center;
+    background-color:#fff;
+    position:relative;
+    transform-origin: top left; //旋转点选取
+    transition:transform 0.5s linear;
+    .top-left{
+        position:fixed;
+        height:200px;
+        width:200px;
+        border-radius:50% ;
+        left:-100px;
+        top:-100px;
+        transition:transform 0.5s linear;
+        background-color:#ff7979;
+        i{
+            position:absolute;
+            color:#fff;
+            font-size:30px;
+        }
+        .fa-remove{
+            bottom:40px;
+            left:50px;
+            transform-origin: top left;
+        }
+        .fa-bars{
+            right:50px;
+            bottom:40px;
+        }
+         
+    }
+    .article{
+        position:static;
+        max-width:864px;
+        margin:50px auto;
+        
+        p{
+            color:#333;
+            line-height:1.5;
+        }
+        em{
+            color:#555;
+            line-height:1.5;
+        }
+        img{
+           max-width:100%;
+        }
+    }
+
+}
+.bottom-left{
+    position:fixed;
+    color:#fff;
+    padding-left:30px;
+    left:-200px;
+    bottom:40px;
+    transition:left 0.7s ease-in;
+    i{
+        display:block;
+        margin:40px 0;
+        span{
+            margin-left:10px;
+        }
+    }
+    i+i{
+        margin-left:20px;
+    }
+    i+i+i{
+        margin-left:40px;
+    }
+    .fa{
+        font-weight:900;
+    }
+}
+
+.rotating{
+    transform:rotate(-20deg);
+}
+
+.rotating .top-left{
+    transform:rotate(-70deg);
+}
+.rotating + .bottom-left{
+    left:30px;
+}

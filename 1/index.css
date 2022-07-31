@@ -1,0 +1,37 @@
+.container,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  align-items: center;
+  margin-left: 80px;
+}
+.container li {
+  list-style-type: none;
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 800px;
+  margin-top: 80px;
+  transition: width 1s linear;
+  overflow: hidden;
+  border-radius: 50px 50px;
+  margin-left: 30px;
+}
+.container li img {
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+}
+.container li span {
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  font-size: 30px;
+  bottom: 20px;
+  left: 20px;
+}
+/*# sourceMappingURL=./index.css.map */
