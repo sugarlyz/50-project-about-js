@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+.btn {
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  background-color: purple;
+  padding: 20px 30px;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+.circle {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  background-color: #fff;
+  animation: scale 0.5s ease-out;
+}
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=./index.css.map */
